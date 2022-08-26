@@ -1,5 +1,6 @@
 ---
 # tasks file for clonerepo
 - name: "Clone Repo"
+  git:
     repo: https://github.com/RWright1992/trio-task-ex.git
     dest: /home/user/trio
