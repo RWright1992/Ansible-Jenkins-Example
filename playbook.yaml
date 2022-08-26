@@ -17,3 +17,9 @@
   become: true
   roles:
   - swarmjoin
+
+- hosts: manager-group
+  become: true
+  roles:
+  - clonerepo
+  - stackdeploy
