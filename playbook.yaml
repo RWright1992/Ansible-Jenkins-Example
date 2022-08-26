@@ -19,6 +19,7 @@
   - swarmjoin
 
 - hosts: manager-group
+  connection: local
   become: true
   roles:
   - clonerepo
