@@ -1,5 +1,11 @@
 ---
 # tasks file for stackdeploy
+- name:
+  pip:
+    name:
+    - jsondiff
+    - pyyaml
+    
 - name: Deploy stack from a compose file
   docker_stack:
     state: present
